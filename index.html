@@ -1,1 +1,328 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel= "stylesheet" href = "style.css">
+    <title>Amanda Ha</title>
+    <link rel="icon" href="/logo.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <!--------------------------- NAVBAR --------------------------------------------------->
+
+  <body data-spy="scroll" data-target="#navbar-example2" data-offset="100">
+
+    <nav id="navbar-example2" class="navbar sticky-top navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src= "logo.png" style= "width: 4rem;"> </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Awards">Awards</a>
+          </li>
+        </ul>
+  </nav>
+
+<!---------------------------------HOMEPAGE------------------------------------->
+  
+      <div class="jumbotron jumbotron-fluid">   
+        <br><br><br>  
+
+        <div class= "d-flex justify-content-center">
+          <a href="mailto:amandaha29@gmail.com?subject= Just came from your website!">
+              <i class="fa fa-2x fa-envelope"></i></a>  
+            
+            <a href= "https://www.linkedin.com/in/amandakha/" target="_blank" > 
+              <i class="fa fa-2x fa-linkedin"></i></a>
+            
+            <a href= "https://github.com/AmandaHa29" target="_blank"> 
+              <i class="fa fa-2x fa-github"></i></a>
+        </div>  
+
+
+    
+  
+    <h1>Amanda Ha</h1>
+
+
+
+
+
+        <!------------Typewriter effect----------------------->
+          <h6>
+          
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "Student", "Web Developer", "Intern", "Software Engineer" ]'></span>
+          </h6>
+
+
+        </div>
+      </div>
+
+    <script>var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+    
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+    
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+    
+      if (this.isDeleting) { delta /= 2; }
+    
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+    
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+    
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };</script>
+
+
+<!-----end of typewriter-------------------->
+
+
+    <!---ABOUT-->
+    <div id="About" data-aos="fade-up" >
+
+    <h2>Education</h2>
+    
+   <div class = "aboutRow ">
+      <div class="row">
+        <div class="col-lg-6" >
+          <img src="amandaProfile.jpg" class= "img-fluid mx-auto d-block rounded-circle" style = "width: 250px">
+        </div>
+      
+<!---------University------------------------->        
+    <div class="col-sm-6">
+    <div>
+      <div class = "row">
+        <div>
+          <h4> <i class="material-icons md-32">school</i>  School</h4>
+          <ul>
+            <li>University of Washington -- Seattle</li>
+            <li>B.S. in Computer Science</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+<br>
+<br>
+<!------------Classes------------------------->
+<div class = "row">
+      <div>
+          <h4> <span class="material-icons md-32"> class</span>  Coursework</h4> 
+          <ul>
+          <li>Intellectual Foundations of Informatics</li>
+          <li>Computer Programming II</li>
+          <li>Matrix Algebra with Applications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+<br><br><br>
+</div>
+
+      
+<!----------------EXPERIENCE------------------------------------------->
+<div id="Experience" data-aos="fade-up"> 
+    
+    <div class="container">
+      <div class="row">
+
+       <!---------------Professional Experience---------->
+        <div class="col-lg-6 ">
+            <h2> Professional Experience</h2>
+                <ul class="timeline">
+                    <li class="timeline-item ml-3 p-4">
+                        <div class="timeline-arrow"></div>
+                        <h4 class="h5 mb-0">T-Mobile</h4><span class="small text-gray">Explorer Software Engineer Intern | June 2020 - August 2020</span>
+                        <p>Developed API that streamlines access to service data for engineers; used JavaScript, MySQL, MySQL Workbench, Sequelize ORM, Node.js, Postman and Docker</p>
+                        <p>Built custom user interface to enable easy viewing and editing of database; used React.js</p>
+                        
+                    </li>
+
+                    <li class="timeline-item ml-3 p-4">
+                      <div class="timeline-arrow"></div>
+                      <h4 class="h5 mb-0">Jane Street Capital</h4><span class="small text-gray">Women in STEM event attendee | July 2020</span>
+                      <p>1 of 97 students selected to explore quantitative trading via competitions and workshops with Jane Street executives</p>
+                    </li>
+
+                    <li class="timeline-item ml-3 p-4">
+                        <div class="timeline-arrow"></div>
+                        <h4 class="h5 mb-0">Microsoft</h4><span class="small text-gray"></i>Software Engineer Intern | June - August 2019</span>
+                        <p>Increased team productivity by developing leader board widgets for Azure DevOps to track number of pull requests, code reviews and lines changed in repository via REST APIs; used JavaScript, HTML, CSS</p>
+                        <p>Collaborated with OneWeek hackathon team to create presentation on career pathways for women in tech</p>
+                        <p>Invited back to speak at Microsoft’s Young Women Empowered event about internship experience</p>
+                        <img src = "">
+                    </li>
+                    <br>
+                  </ul>
+            </div>
+
+      <!-----------------Extracurricular experience------------>
+        <div class="col-lg-6 ">
+          <h2>Extracurriculars & Projects </h2>
+            <ul class="timeline">
+                <li class="timeline-item ml-3 p-4 ">
+                  <div class="timeline-arrow"></div>
+                  <h4 class="h5 mb-0">STEMpowher</h4><span class="small text-gray">Web Developer | September 2019 - Present</span>
+                  <p>Empowering girls to pursue STEM through inspiring interviews with female industry leaders and local STEM opportunities </p>
+                  <a href="https://stempowher.com" target="_blank" ><img src = "STEMpowher.png"> </a>
+                </li>
+
+                <li class="timeline-item ml-3 p-4 ">
+                  <div class="timeline-arrow"></div>
+                  <h4 class="h5 mb-0">Bellevue Breakfast Rotary Club</h4><span class="small text-gray"> Computer Network Technician | Feburary 2020 </span>
+                  <p>1 of 10 top students selected for service trip to build computer labs in 12 elementary schools across Antigua</p>
+                  <p>Configured Wi-Fi routers and installed computers</p>
+                  <p>Featured on Good Morning Antigua Television Network</p>
+                </li>
+
+                <li class="timeline-item ml-3 p-4 ">
+                  <div class="timeline-arrow"></div>
+                  <h4 class="h5 mb-0">TACACS+ Protocol Implementation</h4><span class="small text-gray"> May 2019 </span>
+                  <p>Implemented TACACS+ protocol to authenticate a router through a Linux server hosted in AWS cloud</p>
+                  <p>Improved router security by enabling remote control of username & password</p>  
+                </li>
+                
+              </ul>
+              <br><br><br><br>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-------------------------------AWARDS----------------------------------->
+
+<div id="Awards" data-aos="fade-up">
+<h2>Awards & Certifications</h2>
+
+  <!--------1st row of awards----------->
+
+  <div class = "row d-flex justify-content-center">
+    <div class = "col-lg-3">
+      <div class="card-body shadow">
+        <img src = "Comcast.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+        <h5 class="card-title">Comcast NBCUniversal Leaders & Achievers Scholarship</h5>
+        <p class="card-text">Awarded $2,500 for demonstrating community service, academic performance, and leadership</p>
+    </div>
+  </div>
+
+  <div class = "col-lg-3">
+    <div class="card-body shadow">
+      <img src = "microsoft.png" style= "width: 3rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+      <h5 class="card-title">Microsoft Networking Fundamentals Certification</h5>
+      <p class="card-text">Demonstrated understanding of network protocols, Windows Server, DNS, TCP/IP ect. 
+
+      </p>
+    </div>
+  </div>
+
+  <div class = "col-lg-3">
+    <div class="card-body shadow">
+      <img src = "first.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+      <h5 class="card-title">Finalists at FIRST Robotics World Championships</h5>
+    <p class="card-text">Ranked among top 4 of 3,800 international teams in 2019 competition </p>
+    </div>
+  </div>
+
+
+
+  <div class = "col-lg-3">
+    <div class="card-body shadow">
+      <img src = "Knight.jpg" style= "width: 5rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
+      <h5 class="card-title">Newport Knight Valor</h5>
+      <p class="card-text">Awarded for contribruting 285 hours of community service.</p>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!----------------------------FOOTER----------------------------->  
+<div class= "footer d-flex justify-content-center">
+  <div>
+    <a href="mailto:amandaha29@gmail.com?subject= Just came from your website!">
+      <i class="fa fa-2x fa-envelope"></i></a>  
+    
+    <a href= "https://www.linkedin.com/in/amandahkha/" target="_blank"> 
+      <i class="fa fa-2x fa-linkedin"></i></a>
+    
+    <a href= "https://github.com/AmandaHa29" target="_blank"> 
+      <i class="fa fa-2x fa-github"></i></a>
+</div>
+</div>
+
+ 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/42b32c8166.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+  </body>
+</html>
