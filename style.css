@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, li, p {
   background: black;
   height: 100vh;
   background-image: url("wallpaper.jpg");
-  /* background-position:70%; */
+  background-position:70%;
   color:white
 
 }
@@ -125,7 +125,7 @@ ul.timeline:before {
   display: inline-block;
   position: absolute;
   left: 16px;
-  width: 3px;
+  width: 2px;
   height: 100%;
   z-index: 400;
   border-radius: 1rem;
@@ -138,8 +138,8 @@ li.timeline-item::before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid black;
-  left: 11px;
+  border: 2px solid black;
+  left: 10px;
   width: 14px;
   height: 14px;
   z-index: 400;
