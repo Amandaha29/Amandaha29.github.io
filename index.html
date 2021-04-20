@@ -1,346 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel= "stylesheet" href = "style.css">
-    <title>Amanda Ha</title>
-    <link rel="icon" href="/logo.png">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>CP2</title>
   </head>
-
-  <!--------------------------- NAVBAR --------------------------------------------------->
-
-  <body data-spy="scroll" data-target="#navbar-example2" data-offset="100">
-
-    <nav id="navbar-example2" class="navbar sticky-top navbar-light bg-white">
-      <a class="navbar-brand" href="#"><img src= "logo.png" style= "width: 4rem;"> </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Awards">Awards</a>
-          </li>
-        </ul>
-  </nav>
-
-<!---------------------------------HOMEPAGE------------------------------------->
-  
-      <div class="jumbotron jumbotron-fluid">   
-        <br><br><br>  
-
-        <div class= "d-flex justify-content-center">
-          <a href="mailto:amandaha29@gmail.com?subject= Just came from your website!">
-              <i class="fa fa-2x fa-envelope"></i></a>  
-            
-            <a href= "https://www.linkedin.com/in/amandakha/" target="_blank" > 
-              <i class="fa fa-2x fa-linkedin"></i></a>
-            
-            <a href= "https://github.com/AmandaHa29" target="_blank"> 
-              <i class="fa fa-2x fa-github"></i></a>
-        </div>  
-
-
-    
-  
-    <h1>Amanda Ha</h1>
-
-
-
-
-
-        <!------------Typewriter effect----------------------->
-          <h6>
-          
-            <span
-               class="txt-rotate"
-               data-period="2000"
-               data-rotate='[ "Student", "Web Developer", "Intern", "Software Engineer" ]'></span>
-          </h6>
-
-
-        </div>
-      </div>
-
-    <script>var TxtRotate = function(el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-    
-    TxtRotate.prototype.tick = function() {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-    
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-    
-      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-    
-      var that = this;
-      var delta = 300 - Math.random() * 100;
-    
-      if (this.isDeleting) { delta /= 2; }
-    
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
-    
-      setTimeout(function() {
-        that.tick();
-      }, delta);
-    };
-    
-    window.onload = function() {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };</script>
-
-
-<!-----end of typewriter-------------------->
-
-
-    <!---ABOUT-->
-    <div id="About" data-aos="fade-up" >
-
-    <h2>Education</h2>
-    
-   <div class = "aboutRow ">
-      <div class="row">
-        <div class="col-lg-6" >
-          <img src="amandaProfile.jpg" class= "img-fluid mx-auto d-block rounded-circle" style = "width: 250px">
-        </div>
-      
-<!---------University------------------------->        
-    <div class="col-sm-6">
-    <div>
-      <div class = "row">
-        <div>
-          <h4> <i class="material-icons md-32">school</i>  School</h4>
-          <ul>
-            <li>University of Washington -- Seattle</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-<br>
-<br>
-<!------------Classes------------------------->
-<div class = "row">
-      <div>
-          <h4> <span class="material-icons md-32"> class</span>  Coursework</h4> 
-          <ul>
-          <li>Intellectual Foundations of Informatics</li>
-          <li>Computer Programming II</li>
-          <li>Beginning Scientific Computing</li>
-          <li>Technical Foundations of Informatics</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-</div>
-<br><br><br>
-</div>
-
-      
-<!----------------EXPERIENCE------------------------------------------->
-<div id="Experience" data-aos="fade-up"> 
-    
-    <div class="container">
-      <div class="row">
-
-       <!---------------Professional Experience---------->
-        <div class="col-lg-6 ">
-            <h2> Professional Experience</h2>
-                <ul class="timeline">
-
-                    <li class="timeline-item ml-3 p-4">
-                      <div class="timeline-arrow"></div>
-                      <h4 class="h5 mb-0">Mount Locks</h4><span class="small text-gray">Software Engineer Intern | September 2020 - December 2020</span>
-                      <p>• Developed map feature on data analytics dashboard that displayed scooter lock locations using Google Maps API </p>
-                      <p>• Redesigned dashboard login flow to simplify user experience using Vue.js </p>
-                      <p>• Communicated technical changes with business and hardware engineering team members through weekly standups </p>   
-                    </li>
-                
-                    <li class="timeline-item ml-3 p-4">
-                        <div class="timeline-arrow"></div>
-                        <h4 class="h5 mb-0">T-Mobile</h4><span class="small text-gray">Explorer Software Engineer Intern | June 2020 - August 2020</span>
-                        <p>• Developed API that streamlined access to service data for engineers using JavaScript and MySQL </p>
-                        <p>• Designed custom frontend interface that integrated API to enable easy viewing and editing of database using React.js </p>
-                        <p>• Consulted software engineers within my team to gain user experience feedback on dashboard design choices </p>   
-                    </li>
-
-                    <li class="timeline-item ml-3 p-4">
-                      <div class="timeline-arrow"></div>
-                      <h4 class="h5 mb-0">National Security Agency</h4><span class="small text-gray">Stokes Educational Scholar (CJO) | Offer cancelled due to COVID-19 | June 2020</span>
-                      <p>• $30,000/year scholarship, yearly summer internships throughout college, and full-time offer post-graduation </p>
-                      <p>• Previously in processing for Top Secret Security Clearance, passed background check, and polygraph </p>
-                  </li>
-
-
-                    <li class="timeline-item ml-3 p-4">
-                        <div class="timeline-arrow"></div>
-                        <h4 class="h5 mb-0">Microsoft</h4><span class="small text-gray"></i>Software Engineer Intern | June 2019 - August 2019</span>
-                        <p>• Developed widgets for Azure DevOps that tracked Git repository statistics via REST API calls using JavaScript and HTML </p>
-                        <p>• Collaborated with OneWeek hackathon team to create presentation on pathways at Microsoft for women in tech </p>
-                        <p>• Invited back to speak at Microsoft’s Young Women Empowered event about internship experience </p>
-                    </li>
-                    <br>
-                  </ul>
-            </div>
-
-      <!-----------------Extracurricular experience------------>
-        <div class="col-lg-6 ">
-          <h2>Extracurriculars & Projects </h2>
-            <ul class="timeline">
-                <li class="timeline-item ml-3 p-4 ">
-                  <div class="timeline-arrow"></div>
-                  <h4 class="h5 mb-0">STEMpowher</h4><span class="small text-gray">Web Developer | September 2019 - Present</span>
-                  <p>Empowering girls to pursue STEM through inspiring interviews with female industry leaders and local STEM opportunities </p>
-
-                  <p>• Website reached over 2,500 page views from over 1,500 unique users </p>
-                  <p>• Interviewed 30+ women leaders including Redmond Mayor Birney and T-Mobile Senior VP Elizabeth Hunter</p>
-                  <p>• Spoke about project at IGNITE Worldwide STEM exploration panel for middle school students </p>
-                  <a href="https://stempowher.com" target="_blank" ><img src = "STEMpowher.png"> </a>
-                </li>
-
-                <li class="timeline-item ml-3 p-4 ">
-                  <div class="timeline-arrow"></div>
-                  <h4 class="h5 mb-0">Cisco Networking Academy</h4><span class="small text-gray"> Computer Network Technician | Feburary 2020 </span>
-                  <p>• 1 of 10 top students selected for service trip to build computer labs in 12 elementary schools across Antigua </p>
-                  <p>• Collaborated with teachers and school administration to determine optimal computer lab layouts </p>
-                  <p>• Featured on Good Morning Antigua Television Network </p>
-                </li>
-
-  
-                <li class="timeline-item ml-3 p-4">
-                  <div class="timeline-arrow"></div>
-                  <h4 class="h5 mb-0">Jane Street Capital</h4><span class="small text-gray">Women in STEM event attendee | July 2020</span>
-                  <p>• Selected for 2 day event to explore quantitative trading via competitions and workshops with Jane Street executives</p>
-                </li>
-                
-              </div>
-
-
-              </ul>
-              <br><br><br><br>
-           </div>
-        </div>
-      </div>
-    </div>
-
-
-
-<!-------------------------------AWARDS----------------------------------->
-
-<div id="Awards" data-aos="fade-up">
-<h2>Awards & Certifications</h2>
-
-  <!--------1st row of awards----------->
-
-  <div class = "row d-flex justify-content-center">
-    <div class = "col-lg-3">
-      <div class="card-body shadow">
-        <img src = "Comcast.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
-        <h5 class="card-title">Comcast NBCUniversal Leaders & Achievers Scholarship</h5>
-        <p class="card-text">Awarded $2,500 for demonstrating community service, academic performance, and leadership</p>
-    </div>
-  </div>
-
-  <div class = "col-lg-3">
-    <div class="card-body shadow">
-      <img src = "microsoft.png" style= "width: 3rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
-      <h5 class="card-title">Microsoft Networking Fundamentals Certification</h5>
-      <p class="card-text">Demonstrated understanding of network protocols, Windows Server, DNS, TCP/IP ect. 
-
+  <body>
+    <section id="intro">
+      <h1>Hello!</h1>
+      <p>
+        I'm Amanda Ha. I'm a first year student at the University of Washington passionate about
+        software development and UX design.
       </p>
-    </div>
-  </div>
+      <hr>
+    </section>
 
-  <div class = "col-lg-3">
-    <div class="card-body shadow">
-      <img src = "first.png" style= "width: 4rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
-      <h5 class="card-title">Finalists at FIRST Robotics World Championships</h5>
-    <p class="card-text">Ranked among top 4 of 3,800 international teams in 2019 competition </p>
-    </div>
-  </div>
+    <h2>Education
+      <img class="section-icon" src="img/graduation.png" alt="Graduation cap icon">
+      <!-- Icons made by freepik.com -->
+    </h2>
+    <section class="exp">
+      <h3 class="institution-name">University of Washington, Seattle</h3>
+    </section>
 
+    <h2>Skills
+      <img id="skills-icon" src="img/bluecode.png" alt="code icon in blue">
+      <!-- Icons made by freepik.com -->
+    </h2>
+    <section id="skill-tags">
+      <p>Click to choose the experiences you want to see!</p>
+      <button class="skill-java">Java</button>
+      <button class="skill-js">JavaScript</button>
+      <button class="skill-html">HTML</button>
+      <button class="skill-css">CSS</button>
+      <button class="skill-r">R</button>
+      <button class="skill-mysql">MySQL</button>
+    </section>
 
-
-  <div class = "col-lg-3">
-    <div class="card-body shadow">
-      <img src = "Knight.jpg" style= "width: 5rem; padding-top:10%; padding-bottom: 10%;" class = "mx-auto d-block">
-      <h5 class="card-title">Newport Knight Valor</h5>
-      <p class="card-text">Awarded for contribruting 285 hours of community service.</p>
-    </div>
-  </div>
-
-
-
-</div>
-
-</div>
-</div>
-</div>
-
-<!----------------------------FOOTER----------------------------->  
-<div class= "footer d-flex justify-content-center">
-  <div>
-    <a href="mailto:amandaha29@gmail.com?subject= Just came from your website!">
-      <i class="fa fa-2x fa-envelope"></i></a>  
-    
-    <a href= "https://www.linkedin.com/in/amandahkha/" target="_blank"> 
-      <i class="fa fa-2x fa-linkedin"></i></a>
-    
-    <a href= "https://github.com/AmandaHa29" target="_blank"> 
-      <i class="fa fa-2x fa-github"></i></a>
-</div>
-</div>
-
- 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/42b32c8166.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
+    <article id="all-exp">
+      <h2>Work Experience
+        <img class="section-icon" src="img/briefcase.png" alt="briefcase icon">
+        <!-- Icons made by freepik.com -->
+      </h2>
+      <section class="exp">
+        <h5>June 2021 - August 2021</h5>
+        <h3 class="institution-name">Cisco Systems</h3>
+        <h4>Incoming Software Engineer Intern</h4>
+        <ul>
+          <li>Security Business Group</li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>March 2021 - Present</h5>
+        <h3 class="institution-name">University of Washington Information School</h3>
+        <h4>Teaching Assistant (INFO 201: Technical Foundations)</h4>
+        <div class="skill-r">R</div>
+        <div class="skill-html">HTML</div>
+        <div class="skill-css">CSS</div>
+        <ul>
+          <li>
+            Teaching data wrangling and visualization with R, Shiny, HTML and git version control
+            in weekly lab sections of 20 students
+          </li>
+          <li>
+            Working 1 on 1 with students during office hours to address questions about projects
+            and problem sets
+          </li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>September 2020 - December 2020</h5>
+        <h3 class="institution-name">Mount Locks</h3>
+        <h4>Software Engineer Intern</h4>
+        <div class="skill-js">JavaScript</div>
+        <ul>
+          <li>
+            Developed map feature on data analytics dashboard that displayed scooter lock locations
+            using Google Maps API
+          </li>
+          <li>
+            Redesigned dashboard login flow to simplify user experience using Vue.js
+          </li>
+          <li>
+            Communicated technical changes with business and hardware engineering team members
+            through weekly standups
+          </li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>June 2020 - August 2020</h5>
+        <h3 class="institution-name">T-Mobile</h3>
+        <h4>Explorer Software Engineer Intern</h4>
+        <div class="skill-js">JavaScript</div>
+        <div class="skill-mysql">MySQL</div>
+        <ul>
+          <li>
+            Developed API that streamlined access to service data for engineers using JavaScript
+            and MySQL
+          </li>
+          <li
+          >Designed custom frontend interface that integrated API to enable easy viewing and
+            editing of database using React.js
+          </li>
+          <li>
+            Consulted software engineers within my team to gain user experience feedback on
+            dashboard design choices
+          </li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>June 2019 - August 2019</h5>
+        <h3 class="institution-name">Microsoft</h3>
+        <h4>Software Engineer Intern</h4>
+        <div class="skill-js">JavaScript</div>
+        <div class="skill-html">HTML</div>
+        <div class="skill-css">CSS</div>
+        <ul>
+          <li>
+            Developed widgets for Azure DevOps that tracked Git repository statistics via REST API
+            calls using JavaScript and HTML
+          </li>
+          <li>
+            Collaborated with OneWeek hackathon team to create presentation on pathways at
+            Microsoft for women in tech
+          </li>
+          <li>
+            Invited back to speak at Microsoft’s Young Women Empowered event about internship
+            experience
+          </li>
+        </ul>
+      </section>
+      <h2>Projects and Leadership
+        <img class="section-icon" src="img/rocket.png" alt="rocket icon">
+        <!-- Icons made by freepik.com -->
+      </h2>
+      <section class="exp">
+        <h5>September 2019 - Present</h5>
+        <h3 class="institution-name">STEMpowher</h3>
+        <h4>Web Developer (Personal Project)</h4>
+        <div class="skill-js">JavaScript</div>
+        <div class="skill-html">HTML</div>
+        <div class="skill-css">CSS</div>
+        <ul>
+          <li>
+            Developed website reaching over 2,500 views for campaign to empower girls in STEM using
+            JavaScript, HTML and CSS
+          </li>
+          <li>
+            Interviewed 30+ women leaders including Redmond Mayor Birney and T-Mobile Senior VP
+            Elizabeth Hunter
+          </li>
+          <li>
+            Spoke about project at IGNITE Worldwide STEM exploration panel for middle school
+            students
+          </li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>December 2020</h5>
+        <h3 class="institution-name">Footprint: Carbon Emissions Visualization</h3>
+        <h4>Personal Project</h4>
+        <div class="skill-java">Java</div>
+        <div class="skill-js">JavaScript</div>
+        <div class="skill-html">HTML</div>
+        <div class="skill-css">CSS</div>
+        <ul>
+          <li>
+            Worked with team of 3 to build web app that visualizes per country CO2 emissions
+          </li>
+          <li>
+            Designed algorithm that determines the longest combination of countries that emit CO2
+            equivalent to the user- given country using Java
+          </li>
+          <li>
+            Built frontend map view of country combinations using JavaScript, HTML, and Google
+            GeoCharts API
+          </li>
+        </ul>
+      </section>
+      <section class="exp">
+        <h5>February 2020</h5>
+        <h3 class="institution-name">Cisco Networking Academy</h3>
+        <h4>Computer Network Technician</h4>
+        <ul>
+          <li>
+            1 of 10 top students selected for service trip to build computer labs in 12 elementary
+            schools across Antigua
+          </li>
+          <li>
+            Collaborated with teachers and school administration to determine optimal computer lab
+            layouts
+          </li>
+          <li>
+            Featured on Good Morning Antigua Television Network
+          </li>
+        </ul>
+      </section>
+    </article>
+    <footer>
+      Portions of this page © 2021 Amanda Ha, other attributions cited in document or page source
+    </footer>
   </body>
 </html>

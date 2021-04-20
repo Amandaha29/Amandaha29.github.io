@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h5 {
+  float: right;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button, div {
+  outline: none;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(187, 186, 186, 0.4);
+  font-family: 'Arial', sans-serif;
+}
+
+div {
+  display: inline-block;
+  letter-spacing: 1.1px;
+  font-size: 12px;
+  padding: 4px 7px 4px 7px;
+}
+
+button {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  box-shadow: 0 1px 15px rgba(187, 186, 186, 0.4);
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 5px 15px rgba(70, 70, 70, 0.4);
+}
+
+hr {
+  border-top: 2px solid;
+}
+
+#intro {
+  font-size: 35px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#all-exp {
+  padding-bottom: 5%;
+}
+
+.exp, #skill-tags {
+  box-shadow: 0px 0px 20px -17px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  border: 0.5px solid rgb(224, 224, 224);
+  padding: 15px;
+  margin: 10px;
+}
+
+img.section-icon, img#skills-icon {
+  vertical-align: middle;
+  height: 5%;
+  width: 5%;
+}
+
+h3.institution-name {
+  line-height: 0.8px;
+}
+
+.skill-java {
+  background-color: rgb(155, 226, 226);
+}
+
+.skill-js {
+  background-color: rgb(247, 217, 49);
+}
+
+.skill-html {
+  background-color: rgb(255, 177, 104);
+}
+
+.skill-css {
+  background-color: rgb(126, 167, 255);
+}
+
+.skill-mysql {
+  background-color: rgb(132, 221, 143);
+}
+
+.skill-r {
+  background-color: rgb(196, 180, 233);
+}
+
+.skill-remove {
+  background-color: rgb(233, 229, 229);
+}
+
+.hidden {
+  display: none;
+}
