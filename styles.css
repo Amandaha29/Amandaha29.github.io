@@ -17,6 +17,11 @@ ul {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  color: rgb(70, 155, 144);
+  text-decoration: none;
+}
+
 button, div {
   outline: none;
   color: black;
