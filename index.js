@@ -12,7 +12,6 @@
 
   /** Shows experiences matching skills selected */
   function toggleExperience() {
-    replaceSkillIcon();
     hideExps();
     this.classList.toggle("skill-remove");
     let skillsInclude = [];
@@ -39,16 +38,6 @@
       let exp = allExps[i];
       exp.classList.add("hidden");
     }
-  }
-
-  /** Replaces blue skill icon with green version */
-  function replaceSkillIcon() {
-    let gIcon = gen("img");
-    gIcon.src = "img/greencode.png";
-    gIcon.alt = "code icon in green";
-    gIcon.id = "skills-icon";
-    let skillIcon = id("skills-icon");
-    skillIcon.parentNode.replaceChild(gIcon, skillIcon);
   }
 
   /**
