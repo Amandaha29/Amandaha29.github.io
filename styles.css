@@ -17,12 +17,7 @@ ul {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  color: rgb(70, 155, 144);
-  text-decoration: none;
-}
-
-button, div {
+button, .skill-java, .skill-css, .skill-html, .skill-js, .skill-mysql, .skill-r {
   outline: none;
   color: black;
   border: none;
@@ -31,12 +26,6 @@ button, div {
   font-family: 'Arial', sans-serif;
 }
 
-div {
-  display: inline-block;
-  letter-spacing: 1.1px;
-  font-size: 12px;
-  padding: 4px 7px 4px 7px;
-}
 
 button {
   font-size: 14px;
@@ -51,14 +40,11 @@ button:hover {
   box-shadow: 0 5px 15px rgba(70, 70, 70, 0.4);
 }
 
-hr {
-  border-top: 2px solid;
-}
-
 #intro {
   font-size: 35px;
   margin-top: 10%;
   margin-bottom: 10%;
+  margin-right: 10%;
 }
 
 #all-exp {
@@ -81,6 +67,25 @@ img.section-icon, img#skills-icon {
 
 h3.institution-name {
   line-height: 0.8px;
+}
+
+#links {
+  display: flex;
+  margin-top: 7%;
+}
+
+#links img {
+  width: 2rem;
+  height: auto;
+  margin-right: .7rem;
+
+}
+
+.skill-java, .skill-css, .skill-html, .skill-js, .skill-mysql, .skill-r {
+  display: inline-block;
+  letter-spacing: 1.1px;
+  font-size: 12px;
+  padding: 4px 7px 4px 7px;
 }
 
 .skill-java {
