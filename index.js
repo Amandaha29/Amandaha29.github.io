@@ -15,7 +15,7 @@
     hideExps();
     this.classList.toggle("skill-remove");
     let skillsInclude = [];
-    for (let i = 1; i < this.parentNode.children.length; i++) {
+    for (let i = 0; i < this.parentNode.children.length; i++) {
       let skillTag = this.parentNode.children[i];
       if (!skillTag.classList.value.includes("skill-remove")) {
         skillsInclude.push(skillTag.classList.value);
@@ -34,7 +34,7 @@
   /** Hides all experiences with skill tags */
   function hideExps() {
     let allExps = qsa("article#all-exp section");
-    for (let i = 1; i < allExps.length - 1; i++) {
+    for (let i = 0; i < allExps.length - 1; i++) {
       let exp = allExps[i];
       exp.classList.add("hidden");
     }

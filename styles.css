@@ -1,5 +1,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+#resume {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
@@ -17,12 +20,12 @@ ul {
   font-family: 'Open Sans', sans-serif;
 }
 
-button, .skill-java, .skill-css, .skill-html, .skill-js, .skill-mysql, .skill-r {
+button, .skill-java, .skill-css, .skill-html, .skill-js, .skill-sql, .skill-r {
   outline: none;
   color: black;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 1px 15px rgba(187, 186, 186, 0.4);
+  box-shadow: 0 2px 15px rgba(187, 186, 186, 0.4);
   font-family: 'Arial', sans-serif;
 }
 
@@ -30,7 +33,6 @@ button, .skill-java, .skill-css, .skill-html, .skill-js, .skill-mysql, .skill-r 
 button {
   font-size: 14px;
   letter-spacing: 1.2px;
-  box-shadow: 0 1px 15px rgba(187, 186, 186, 0.4);
   padding: 5px 10px 5px 10px;
   margin: 5px;
   transition: all 0.2s ease-in-out;
@@ -40,11 +42,23 @@ button:hover {
   box-shadow: 0 5px 15px rgba(70, 70, 70, 0.4);
 }
 
-#intro {
+#download {
+  margin: 2%;
+  display:block;
+  margin-left:auto;
+  margin-right: 2;
+  background-color: #90e2d4
+}
+
+#download a {
+  color:black;
+  text-decoration: none;
+}
+
+#intro{
   font-size: 35px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-right: 10%;
+  padding: 1% 15% 5% 15%;
+  background-color: rgb(243, 243, 243);
 }
 
 #all-exp {
@@ -81,7 +95,7 @@ h3.institution-name {
 
 }
 
-.skill-java, .skill-css, .skill-html, .skill-js, .skill-mysql, .skill-r {
+.skill-java, .skill-css, .skill-html, .skill-js, .skill-sql, .skill-r {
   display: inline-block;
   letter-spacing: 1.1px;
   font-size: 12px;
@@ -104,7 +118,7 @@ h3.institution-name {
   background-color: rgb(126, 167, 255);
 }
 
-.skill-mysql {
+.skill-sql {
   background-color: rgb(132, 221, 143);
 }
 
