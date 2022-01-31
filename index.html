@@ -10,192 +10,105 @@
     <title>Amanda Ha</title>
     <link rel="icon" type="image/png" href="img/favicon.png"/>
   </head>
-  <body>
-    <button id="download">
-      <a href="AmandaHa_Resume_2022.pdf" target="_blank" download> Resume 💌 </a>
-    </button>
 
-    <section id="intro">
-      <h1>Hello! 🌊</h1>
-      <p>
-        My name is Amanda Ha. I'm passionate about software development and UX design.
-        Welcome to my website!
-      </p>
-      <div id="links">
-        <a href="https://www.linkedin.com/in/amandakha" target="_blank" rel="noopener noreferrer">
-          <img src="img/linkedin.png">
-        </a>
-        <a href="https://github.com/Amandaha29" target="_blank" rel="noopener noreferrer">
-          <img src="img/github.png">
-        </a>
-        <a href="mailto: amandaha29@gmail.com" target="_blank" rel="noopener noreferrer">
-          <img src="img/email.png">
-        </a>
+  <body>
+
+    <section id="color-block">
+      <div class="header">
+        <div class="name">Amanda Ha</div>
+      </div>
+
+      <section id="intro">
+        <p>
+          Hello! I am an Informatics major at the University of Washington. I love all things software engineering, but recently, I've been really into front-end 
+          development and UX design. I'll be working on that with this website.
+        </p>
+        <p>
+          Some background on me, I just finished up my SWE internship with <a href=https://www.cisco.com>Cisco</a> where I worked on some features for a device management
+          web application called SecureX Device Insights. I'll be interning at <a href=https://www.datadistillr.com>DataDistillr</a> in the spring and <a href=https://www.microsoft.com>Microsoft</a> 
+          in the summer. 
+        </p>
+        <p>
+          Before you go, take a copy of my <a href="AmandaHa_Resume.pdf" target="_blank" >resume</a> with you!
+        </p>
+
+        <div id="links">
+          <a href="https://www.linkedin.com/in/amandakha" target="_blank" rel="noopener noreferrer">
+            <img src="img/linkedin.png">
+          </a>
+          <a href="https://github.com/Amandaha29" target="_blank" rel="noopener noreferrer">
+            <img src="img/github.png">
+          </a>
+          <a href="mailto: amandaha29@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/email.png">
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section id="highlights">
+      <h2>Favorite moments</h2>
+
+      <div class="row">
+          <div class="column">
+            <img src="img/microsoft_sign.jpg" style="width:260px;">
+            <p>My twin and I at our first day of working at Microsoft.</p>
+            <p>- June 2019</p>
+          </div>
+          <div class="column">
+            <img src="img/student_comment.png" style="width:260px;">
+            <p>A student response to the question - What do you find most helpful in this class? (the class I TA'd for). The survey was anonymous. I think.</p>
+            <p>- June 2021</p>
+          </div>
+          <div class="column">
+            <a href="https://stempowher.com/"><img src="img/stempowher.png" style="width:260px;"></a>
+            <p>My first website. Blood, sweat, tears and Stack Overflow.</p>
+            <p>- October 2019</p>
+          </div>
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Education </h2>
-      <section class="exp">
-        <h3 class="institution-name">University of Washington, Seattle</h3>
-      </section>
-
-      <h2>Skills </h2>
-      <section id="skill-tags">
-        <button class="skill-java">Java</button>
-        <button class="skill-js">JavaScript</button>
-        <button class="skill-html">HTML</button>
-        <button class="skill-css">CSS</button>
-        <button class="skill-r">R</button>
-        <button class="skill-sql">SQL</button>
-      </section>
-
-      <article id="all-exp">
+      <article id="work-exp">
         <h2>Work Experience</h2>
-        <section class="exp">
-          <h5>June 2021 - Present</h5>
-          <h3 class="institution-name">Cisco Systems</h3>
-          <h4>Software Engineer Intern</h4>
-          <div class="skill-js">JavaScript</div>
-          <div class="skill-css">CSS</div>
-          <ul>
-            <li>Developed operating system inventory graph for the Device Insights dashboard (React.js, Jest, TypeScript)</li>
-            <li>Built donut chart displaying overall health of device information sources (D3.js)</li>
-            <li>Awarded Intern of the Month by manager</li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>March 2021 - June 2021</h5>
-          <h3 class="institution-name">University of Washington</h3>
-          <h4>Teaching Assistant (Foundational Skills of Data Science)</h4>
-          <div class="skill-r">R</div>
-          <div class="skill-html">HTML</div>
-          <div class="skill-css">CSS</div>
-          <ul>
-            <li>
-              Taught data wrangling and visualization in weekly lab sections of 20 students
-            </li>
-            <li>
-              Worked 1 on 1 with students during office hours to address questions about projects
-              and problem sets
-            </li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>September 2020 - December 2020</h5>
-          <h3 class="institution-name">Mount Locks</h3>
-          <h4>Software Engineer Intern</h4>
-          <div class="skill-js">JavaScript</div>
-          <ul>
-            <li>
-              Developed map feature on data analytics dashboard to display scooter lock locations using Google Maps API
-            </li>
-            <li>
-              Designed and implemented simplified dashboard login flow to minimize number of clicks per login (Vue.js)
-            </li>
-            <li>
-              Worked with business and marketing team members to update pitch decks according to technical changes
-            </li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>June 2020 - August 2020</h5>
-          <h3 class="institution-name">T-Mobile</h3>
-          <h4>Explorer Software Engineer Intern</h4>
-          <div class="skill-js">JavaScript</div>
-          <div class="skill-sql">SQL</div>
-          <ul>
-            <li>
-              Created database to store and organize service data commonly used by software engineers (MySQL)
-            </li>
-            <li>
-              Developed API with endpoints to create, read, update, and delete from database (Node.js)
-            </li>
-            <li>
-              Designed user interface that integrated API to enable easy viewing and editing of database (React.js)
-            </li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>June 2019 - August 2019</h5>
-          <h3 class="institution-name">Microsoft</h3>
-          <h4>Software Engineer Intern</h4>
-          <div class="skill-js">JavaScript</div>
-          <div class="skill-html">HTML</div>
-          <div class="skill-css">CSS</div>
-          <ul>
-            <li>
-              Developed widgets that tracked Git repository statistics via REST API calls
-            </li>
-            <li>
-              Collaborated with OneWeek hackathon team to create presentation on pathways at
-              Microsoft for women in tech
-            </li>
-            <li>
-              Invited back to speak at the Young Women Empowered event about internship experience
-              to 40+ students
-            </li>
-          </ul>
-        </section>
-        <h2>Projects and Leadership</h2>
-        <section class="exp">
-          <h5>September 2019 - Present</h5>
-          <h3 class="institution-name">STEMpowher</h3>
-          <h4>Web Developer (Personal Project)</h4>
-          <div class="skill-js">JavaScript</div>
-          <div class="skill-html">HTML</div>
-          <div class="skill-css">CSS</div>
-          <ul>
-            <li>
-              Developed website reaching over 2,500 views for campaign to empower girls in STEM
-            </li>
-            <li>
-              Interviewed 30+ women leaders including Redmond Mayor Birney and T-Mobile Senior VP
-              Elizabeth Hunter
-            </li>
-            <li>
-              Spoke about project at IGNITE Worldwide STEM exploration panel for middle school
-              students
-            </li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>December 2020</h5>
-          <h3 class="institution-name">Footprint: Carbon Emissions Visualization</h3>
-          <h4>Personal Project</h4>
-          <div class="skill-java">Java</div>
-          <div class="skill-js">JavaScript</div>
-          <div class="skill-html">HTML</div>
-          <div class="skill-css">CSS</div>
-          <ul>
-            <li>
-              Built web app with data visualizations to compare country CO2 emissions with Tableau and Google GeoChart
-            </li>
-            <li>
-              Developed algorithm to determine countries that emit the CO2 equivalent of user-given country using Java
-            </li>
-          </ul>
-        </section>
-        <section class="exp">
-          <h5>February 2020</h5>
-          <h3 class="institution-name">Cisco Networking Academy</h3>
-          <h4>Computer Network Technician</h4>
-          <ul>
-            <li>
-              1 of 10 top students selected for service trip to build computer labs in 12 elementary
-              schools across Antigua
-            </li>
-            <li>
-              Collaborated with teachers and school administration to determine optimal computer lab
-              layouts
-            </li>
-            <li>
-              Featured on Good Morning Antigua Television Network
-            </li>
-          </ul>
-        </section>
+        <article id="all-exp">
+          <section class="exp">
+            <h5>June 2021 - December 2021</h5>
+            <h3 class="institution-name">Cisco Systems</h3>
+            <h4>Software Engineer Intern</h4>
+          </section>
+
+          <section class="exp">
+            <h5>March 2021 - June 2021</h5>
+            <h3 class="institution-name">University of Washington</h3>
+            <h4>Foundational Skills of Data Science Teaching Assistant</h4>
+          </section>
+
+          <section class="exp">
+            <h5>September 2020 - December 2020</h5>
+            <h3 class="institution-name">Mount Locks</h3>
+            <h4>Software Engineer Intern</h4>
+          </section>
+
+          <section class="exp">
+            <h5>June 2020 - August 2020</h5>
+            <h3 class="institution-name">T-Mobile</h3>
+            <h4>Software Engineer Intern</h4>
+          </section>
+
+          <section class="exp">
+            <h5>June 2019 - August 2019</h5>
+            <h3 class="institution-name">Microsoft</h3>
+            <h4>Software Engineer Intern</h4>
+          </section>
+
+          <section class="exp">
+            <h5>September 2019 - Present</h5>
+            <h3 class="institution-name">STEMpowher</h3>
+            <h4>Personal Project</h4>
+          </section>
       </article>
-    </section>
+    </article>
+
     <footer>
       Portions of this page © 2021 Amanda Ha, other attributions cited in document or page source
     </footer>
