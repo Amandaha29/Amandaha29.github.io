@@ -14,13 +14,16 @@ body {
 
 .name, h2 {
   font-size: 20px;
-  font-family: monospace;
   letter-spacing: 1.1px;
   font-weight: bolder;
 }
 
+.name {
+  float: left;
+}
+
 #color-block {
-  background-color: rgb(240, 245, 252);
+  background-color: rgb(235, 248, 255);
   padding-bottom: 3%;
 }
 
@@ -46,24 +49,30 @@ body {
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 75%;
 }
 
 .column {
   float: left;
-  width: 28%;
-  margin: 1%;
-  background-color: rgb(255, 250, 247);
-  padding: 13px;
+  width: 30.3%;
   height: 290px;
+  margin: 1%;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
   font-weight: lighter; 
-  outline: 1px solid rgb(207, 207, 207);
+  outline: 1px solid rgb(0, 0, 0);
 }
 
 .column img {
-  width: 100px;
+  width: 99%;
   display: block;
   margin: auto;
+  outline: 1px solid rgb(0, 0, 0);
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row:after {
@@ -78,12 +87,11 @@ body {
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  background-color: rgb(255, 252, 235);
+  background-color: rgba(255, 251, 235, 0.959);
 }
 
 .exp {
- margin: 8%;
+ margin: 5%;
 }
 
 .exp h5 {
@@ -96,7 +104,7 @@ h3.institution-name {
 
 #links {
   display: flex;
-  margin-top: 7%;
+  float: right;
 }
 
 #links a {
