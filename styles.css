@@ -4,17 +4,18 @@ html, body {
 }
 
 body {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   color:rgb(56, 51, 51);
   font-weight: lighter; 
+  line-height: 1.5;
 }
 
 .header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 3%;
-  width: 90%;
+  width: 75%;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
 
 #color-block {
   padding-bottom: 10%;
-  background-image: linear-gradient(to right, rgb(251, 254, 255), rgb(240,244,255))
+  background-image: linear-gradient(to right, rgb(251, 254, 255), rgb(231, 237, 253))
 }
 
 #intro {
@@ -52,7 +53,7 @@ h2 {
   border-bottom: 1px solid #3070d8c0;
 }
 
-#highlights, #work-exp{
+#highlights, #work-exp {
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: auto;
