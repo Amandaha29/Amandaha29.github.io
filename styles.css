@@ -1,3 +1,8 @@
+html, body {
+  margin:0;
+  padding:0;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -12,26 +17,29 @@ body {
   width: 90%;
 }
 
-.name, h2 {
+h2 {
   font-size: 20px;
   letter-spacing: 1.1px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .name {
   float: left;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  font-weight: 900;
 }
 
 #color-block {
-  background-color: rgb(235, 248, 255);
-  padding-bottom: 3%;
+  padding-bottom: 10%;
+  background-image: linear-gradient(to right, rgb(251, 254, 255), rgb(240,244,255))
 }
 
 #intro {
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 50%;
   color: rgb(46, 53, 65);
 }
@@ -39,7 +47,7 @@ body {
 #intro a {
   text-decoration: none;
   font-weight: 900;
-  color: #3070d8c0;
+  color: #275bb0c0;
   padding-bottom: 1px;
   border-bottom: 1px solid #3070d8c0;
 }
@@ -55,20 +63,26 @@ body {
 .column {
   float: left;
   width: 30.3%;
-  height: 290px;
+  height: 320px;
   margin: 1%;
-  background-color: rgb(255, 255, 255);
-  padding: 2%;
   font-weight: lighter; 
-  outline: 1px solid rgb(0, 0, 0);
+  outline: 1px solid rgb(221, 221, 221);
+  border-radius: 1%;
+
 }
 
 .column img {
-  width: 99%;
+  width: 100%;
   display: block;
   margin: auto;
-  outline: 1px solid rgb(0, 0, 0);
+  outline: 1px solid rgb(221, 221, 221);
+  border-radius: 1%;
 }
+
+.column p {
+  margin: 5%;
+}
+
 .row{
   display: flex;
   align-items: center;
@@ -83,11 +97,11 @@ body {
 
 #all-exp {
   padding: 0.1%;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(255, 251, 235, 0.959);
+  background-color: rgba(244, 253, 238, 0.95);
 }
 
 .exp {
